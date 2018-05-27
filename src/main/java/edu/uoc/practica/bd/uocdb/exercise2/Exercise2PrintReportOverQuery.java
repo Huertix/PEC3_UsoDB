@@ -3,7 +3,6 @@ package edu.uoc.practica.bd.uocdb.exercise2;
 
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.Reader;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -13,7 +12,6 @@ import edu.uoc.practica.bd.util.Column;
 import edu.uoc.practica.bd.util.DBAccessor;
 import edu.uoc.practica.bd.util.FileUtilities;
 import edu.uoc.practica.bd.util.Report;
-import sun.font.ScriptRun;
 
 public class Exercise2PrintReportOverQuery {
 
@@ -146,7 +144,7 @@ public class Exercise2PrintReportOverQuery {
     }
 
     /**
-     * Not in used.....
+     * Not in use.....
      * @param cst
      * @throws SQLException
      */
