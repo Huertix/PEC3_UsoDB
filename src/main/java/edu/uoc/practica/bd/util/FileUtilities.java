@@ -15,16 +15,6 @@ import java.util.List;
 public class FileUtilities {
 
 	/**
-	 * Reads a sql file from the classpath.
-	 */
-	public BufferedReader readSQLFileFromFileClassPath(String file)
-		throws FileNotFoundException, IOException {
-		InputStream is = getClass().getClassLoader().getResourceAsStream(file);
-		InputStreamReader inputStreamReader = new InputStreamReader(is);
-		return new BufferedReader(inputStreamReader);
-	}
-
-	/**
 	 * Reads a comma separated file from the classpath.
 	 */
 	public List<List<String>> readFileFromClasspath(String file)

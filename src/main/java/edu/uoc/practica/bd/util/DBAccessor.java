@@ -53,17 +53,10 @@ public class DBAccessor {
 		Connection conn = null;
 
 		// TODO Implement the DB connection
-		try {
+			
 
-			Class.forName( "org.postgresql.Driver" );
-			String url = String.format("jdbc:postgresql://%s/%s?user=%s&password=%s",
-					this.host, this.dbname, this.user, this.passwd);
-
-			conn = DriverManager.getConnection(url);
-
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+		// TODO Sets the search_path
+			
 
 		return conn;
 	}
