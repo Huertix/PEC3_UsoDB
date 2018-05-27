@@ -95,6 +95,12 @@ public class Exercise2PrintReportOverQuery {
                 }
             } catch (Exception e) {
                 e.printStackTrace();
+            } finally {
+                try {
+                    conn.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
             }
         }
     }
@@ -113,7 +119,7 @@ public class Exercise2PrintReportOverQuery {
         if (success)
             this.run();
         else
-            throw new Exception("It was an error trying to get data from DB");
+            throw new Exception("There was an error trying to get data from DB");
     }
 
     /**

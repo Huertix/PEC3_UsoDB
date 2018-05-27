@@ -125,7 +125,7 @@ public class Exercise1UpdateOrDeleteToyDataFromFile {
                 Integer affected_rows = pst_update_toy.executeUpdate();
 
 				if (affected_rows == 0)
-					throw new SQLException(String.format("toy_id: %s was correctly modified", this.getToyId(row)));
+					throw new SQLException(String.format("toy_id: %s was not correctly modified", this.getToyId(row)));
             }
 
         } catch (SQLException e) {
